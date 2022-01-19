@@ -3,7 +3,7 @@ const locationInput = document.getElementById('location')
 
 weatherForm.addEventListener('submit', (e) => {
     e.preventDefault()
-
+    //Adding comment for second commit
     document.getElementById('forecast').innerHTML = "Loading..."
     document.getElementById('locationResult').innerHTML = ""
 
