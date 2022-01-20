@@ -3,6 +3,7 @@ const express = require('express')
 const hbs = require('hbs')
 const geoCode = require('./utils/geoCode')
 const foreCast = require('./utils/foreCast')
+const port = process.env.PORT || 3000
 
 const app = express()
 
@@ -65,13 +66,6 @@ app.get('/weather', (req, res) => {
             })
         })
     })
-
-
-
-
-    // res.send({
-    //     address: req.query.address
-    // })
 })
 
 
@@ -106,6 +100,6 @@ app.get('*', (req, res) => {
 })
 
 //starting the server to listen to client
-app.listen(3000, () => { // To start server, it takes port number and function to be run when server start
-    console.log('server is up on port number 3000')
+app.listen(port, () => { // To start server, it takes port number and function to be run when server start
+    console.log('server is up on port number ' + port)
 })
