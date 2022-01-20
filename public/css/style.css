@@ -61,3 +61,9 @@ button{
     background: #888888;
     padding: 8px;
 }
+
+.weather-icon {
+    height: 32px;
+    border-radius: 60%;
+    margin-bottom: -10px;
+}
