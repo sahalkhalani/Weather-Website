@@ -26,9 +26,23 @@ header {
     margin-bottom: 48px;
 }
 
+
+
 h1 {
     font-size: 64px;
     margin-bottom: 16px;
+    align-self: center;
+}
+
+@media screen and (max-width: 400px) {
+    h1 {
+        font-size: 12vw;
+        margin-bottom: 16px;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 header a {
