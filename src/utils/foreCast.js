@@ -2,10 +2,12 @@ const request = require('postman-request')
 
 // const foreCast = ({ latitude, longitude, location }, callback) => {
 const foreCast = (latitude, longitude, callback) => {
-    url = 'http://api.weatherstack.com/current?access_key=2405c4e97b294513250ec1469428d0a8&query=' + latitude + ',' + longitude + '&units=m'
+    // url = 'http://api.weatherstack.com/current?access_key=2405c4e97b294513250ec1469428d0a8&query=' + latitude + ',' + longitude + '&units=m' // 1st URL
+    url = 'http://api.weatherstack.com/current?access_key=6861c3e0671fdbcf85e81599b930efb9&query=' + latitude + ',' + longitude + '&units=m' // 2nd URL
 
 
     request({ url, json: true }, (error, { body } = {}) => {
+        
         if (error) {
             callback("Unable to connect to weather service!", undefined)
         }
